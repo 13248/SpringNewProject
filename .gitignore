@@ -1,0 +1,5 @@
+# 项目排除路径
+/spring_01_ioc/target/
+/spring_02_hello/target/
+/spring_03_DI/target/
+/spring_04_DI_extend/target/

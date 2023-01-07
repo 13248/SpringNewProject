@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    这个是用p来快速输入数据-->
+    <bean id="userP" class="com.DI.extend.User" p:uId="123" p:uName="大伟哥" p:uPassword="password"></bean>
+
+<!--    这个是用c来快速构建函数-->
+    <bean id="userC" class="com.DI.extend.User" c:uId="789" c:uName="神力凌华" c:uPassword="987"></bean>
+
+
+<!--    注意，这两个c和p使用时需要划分清楚！-->
+</beans>

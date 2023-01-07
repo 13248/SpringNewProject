@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.DI.Address">
+        <property name="address" value="新疆乌鲁木齐"></property>
+    </bean>
+
+    <bean id="person" class="com.DI.Person">
+        <property name="name" value="bob"></property>
+        <property name="address" ref="address"></property>
+        <property name="books">
+            <array>
+                <value>金瓶梅</value>
+                <value>玉蒲团</value>
+                <value>西厢记</value>
+            </array>
+        </property>
+        <property name="hobbys">
+            <list>
+                <value>睡觉</value>
+                <value>打游戏</value>
+            </list>
+        </property>
+        <property name="cards">
+            <map>
+                <entry key="学生卡" value="202006254116"></entry>
+                <entry key="身份证" value="1234567897879797"></entry>
+            </map>
+        </property>
+        <property name="games">
+            <set>
+                <value>Dota</value>
+                <value>LOL</value>
+            </set>
+        </property>
+        <property name="money">
+            <null></null>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="这里要写什么">这里要写点什么</prop>
+                <prop key="这里也要写点什么">这里我又写了点东西</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
